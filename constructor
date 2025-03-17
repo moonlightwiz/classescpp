@@ -1,0 +1,65 @@
+#include <iostream>
+#include<map>
+#include<set>
+#include<unordered_set>
+#include<vector>
+#include<stack>
+#include<queue>
+#include<algorithm>
+#include<iterator>
+#include<climits>
+#include <iomanip>
+#define ll long long
+
+using namespace std;
+
+long long mod=1e9+7;
+
+class employee{
+
+public:
+    string name;
+    string company;
+    int age;
+    
+    employee(string a,string b,int c){
+        name=a;
+        company=b;
+        age=c;
+    }
+    
+    void introduce()
+    {
+        cout<<"Hello my name is "<<name<<" i am  "<<age<<" years old and i work for "<<company<<"\n";
+    }
+    
+};
+
+
+int main(){
+    
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    
+//    employee e1;
+//    e1.name="Shaurya";
+//    e1.age=20;
+//    e1.company="none";
+//    e1.introduce();
+    
+    // when we declare our custom constructor then the default constructor is lost and gives error
+    
+    employee e2=employee("anne","berozgar",23);
+    e2.introduce();
+    e2.name="moti";
+    e2.introduce();
+    return 0;
+    
+}
+
+
+
+
+
+
